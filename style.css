@@ -1,0 +1,111 @@
+  list-style: none;
+  margin-top: 25px;
+}
+.info-list li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+.info-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+}
+.form-group input:focus, .form-group textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
+.btn-submit {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+:root[data-theme="dark"] .btn-submit {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
+.btn-submit:hover {
+  filter: brightness(1.1);
+}
+/* Pied de page */
+.main-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+/* Adaptabilité Mobile (Responsive) */
+@media (max-width: 960px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .pricing--featured {
+    transform: none;
+    order: -1;
+  }
+  .pricing--featured:hover {
+    transform: translateY(-6px);
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .contact-info, .contact-form {
+    padding: 30px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .pricing,
+  .pricing--featured,
+  .pricing:hover,
+  .pricing--featured:hover {
+    transform: none;
+  }
+}

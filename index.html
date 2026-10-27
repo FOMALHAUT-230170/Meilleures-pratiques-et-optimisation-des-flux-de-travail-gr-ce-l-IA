@@ -1,0 +1,112 @@
+
+  <!-- Section À Propos -->
+  <main>
+    <section id="a-propos" class="about-section">
+      <h2>À Propos de l'Entreprise</h2>
+      <div class="about-container">
+        <p>Fondée à Dakar, <strong>FOMALHAUT.MBC</strong> est une entreprise dynamique spécialisée dans la conception, la réalisation et le conseil en systèmes d'énergie. Nous nous positionnons comme un partenaire stratégique pour les acteurs industriels, tertiaires et résidentiels, offrant une expertise pointue pour relever les défis de la transition énergétique et de l'électrification rurale.</p>
+      </div>
+    </section>
+    <!-- Section Projets (Grille à 3 cartes) -->
+    <section id="projets" class="projects-section">
+      <h2>Nos Projets Récents</h2>
+      <div class="projects-grid">
+        
+        <!-- Carte Projets 1 -->
+        <article class="project-card">
+          <div class="card-img-holder">
+            <img src="LEVAGE.jpeg" alt="Chantier de levage et implantation de poteaux électriques en béton" class="card-img">
+          </div>
+          <div class="card-content">
+            <span class="project-tag">Électrification</span>
+            <h3>Études de Réseaux MT/BT</h3>
+            <p>Conception et études techniques d'électrification de 101 localités pour le compte de COMASEL.</p>
+          </div>
+        </article>
+        <!-- Carte Projets 2 -->
+        <article class="project-card">
+          <div class="card-img-holder">
+            <img src="https://unsplash.com" alt="Installations de panneaux solaires photovoltaïques" class="card-img">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80" alt="Installations de panneaux solaires photovoltaïques" class="card-img">
+          </div>
+          <div class="card-content">
+            <span class="project-tag">Énergie Solaire</span>
+            <h3>Solaire Agropole Adéane</h3>
+            <p>Études complètes d'alimentation électrique et de réseaux d'éclairage public solaire pour l'Agropole.</p>
+          </div>
+        </article>
+        <!-- Carte Projets 3 -->
+        <article class="project-card">
+          <div class="card-img-holder">
+            <img src="https://unsplash.com" alt="Infrastructures de lignes de distribution électrique" class="card-img">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80" alt="Infrastructures de lignes de distribution électrique" class="card-img">
+          </div>
+          <div class="card-content">
+            <span class="project-tag">Distribution</span>
+            <h3>Dorsale Ndioum-Linguère</h3>
+            <p>Travaux d'exécution et de déploiement de lignes électriques stratégiques achevés à plus de 80%.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Section Tarifs -->
+    <!-- Section Tarifs : les cartes sont rendues par Card(titre, prix, fonctionnalités) -->
+    <section id="tarifs" class="pricing-section">
+      <h2>Nos Forfaits</h2>
+      <div class="pricing">
+        <h3 class="title">Forfait de base</h3>
+        <p class="price">9,99 $/mois</p>
+        <ul class="features">
+          <li>1 Go de stockage</li>
+          <li>Assistance de base</li>
+          <li>Toutes les fonctionnalités principales</li>
+        </ul>
+        <button type="button" class="btn">Démarrer l'essai</button>
+      <p class="pricing-lead">Choisissez l’offre qui correspond à votre rythme. L’essai se lance en un clic, sans engagement.</p>
+      <div class="billing-toggle" role="group" aria-label="Période de facturation">
+        <button type="button" class="is-active" data-cycle="mensuel" aria-pressed="true">Mensuel</button>
+        <button type="button" data-cycle="annuel" aria-pressed="false">Annuel <span class="billing-save">−17 %</span></button>
+      </div>
+      <div id="pricing-grid" class="pricing-grid"></div>
+      <p class="pricing-note">Les tarifs annuels correspondent à deux mois offerts. L’offre Entreprise est établie après étude de votre besoin.</p>
+    </section>
+    <!-- Section Formulaire de Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contactez Notre Direction</h2>
+      <div class="contact-container">
+        
+        <div class="contact-info">
+          <h3>Coordonnées Professionnelles</h3>
+          <p>Pour toute opportunité de sous-traitance ou partenariat national et international :</p>
+          <ul class="info-list">
+            <li><strong>📍 Siège :</strong> Dakar, Sénégal</li>
+            <li><strong>📞 Téléphone :</strong> <a href="tel:+221777930006">77 793 00 06</a></li>
+            <li><strong>✉️ E-mail :</strong> <a href="mailto:fomalhaut.kd@gmail.com">fomalhaut.kd@gmail.com</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nom complet ou Entreprise</label>
+            <input type="text" id="name" name="name" placeholder="Ex: SENELEC, COMASEL..." required>
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e-mail de contact</label>
+            <input type="email" id="email" name="email" placeholder="nom@entreprise.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Description de votre besoin technique</label>
+            <textarea id="message" name="message" rows="5" placeholder="Détaillez votre projet de réseau, d'électrification ou de sous-traitance..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Envoyer la demande</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés. Énergie, Ingénierie & Transition Énergétique.</p>
+  </footer>
+  <!-- Lien vers le fichier JavaScript externe -->
+  <script src="script.js"></script>
+</body>
+</html>
